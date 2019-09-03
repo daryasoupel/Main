@@ -6,10 +6,6 @@ public class Main {
         j =j+1;
         System.out.println("i=" +i);
         System.out.println("j=" +j);
-        if (i == 16) {
-           System.out.println("i equal 16");
-        } else {
-            System.out.println("i NOT equal 16");
+        System.out.println((i == 16)? "i equal 16" : "i NOT equal 16");
         }
    }
-}
