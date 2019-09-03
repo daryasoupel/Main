@@ -1,11 +1,15 @@
 public class Main {
     public static void main(String[] args){
-        int x = 5;
-        String s = "Hello";
-        String space = " ";
-        String name = "Bob";
-        System.out.println(s+space+name);
-        System.out.println("Hello+' '+ John");
-        System.out.println("My number is "+x);
+        int a =128;
+        int b;
+        System.out.println("a= "+a);
+        b = a/2;
+        //условные операторы  !=(не равно);&&(и)||(или)
+        //==(равно);<(м);>(Б);>=(б,либо равно);<=(м,либо равно);
+        System.out.println("b= "+b);
+        if (a<256)
+        System.out.println("a<256");
+        else
+            System.out.println("a>=256");
         }
    }
