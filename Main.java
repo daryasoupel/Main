@@ -1,18 +1,20 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int number = 10; //примитивный тип данных // [10]
-        int[] numbers = new int[5]; // numbers ссылается на [массив] ссылочный тип данных
-        for(int i =0; i<numbers.length; i++){
-            numbers[i] = i*10;
-        }
-        for(int i =0; i<numbers.length; i++){
-            System.out.println(numbers[i]);
+        int[] numbers = new int[5];
+        numbers[0]=10;
+        String[] strings = new String[3];
+        strings[0] = "привет";
+        strings[1] = "пока";
+        strings[2] = "джава";
+
+        for (int i=0; i<strings.length; i++){
+            System.out.println(strings[i]);
         }
         System.out.println();
-        int[] numbers1 = {1,2,3};
-        for (int i =0; i<numbers1.length; i++){
-            System.out.println(numbers1[i]);
+
+        for(String string:strings){
+            System.out.println(string);
         }
     }
     }
