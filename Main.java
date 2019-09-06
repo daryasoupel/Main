@@ -1,22 +1,26 @@
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int[] number ={1,2,3};
-        int [][] matrice ={{1,2,3},
-                           {4,5,6},
-                           {7,8,9}};
-        System.out.println(matrice[2][2]);
-        System.out.println(matrice[1][0]);
-        System.out.println();
-
-        int [][] matrice1 ={{1,2,3},
-                {4,5,6},
-                {7,8,9}};
-        for (int i=0; i<matrice1.length; i++){
-            for(int j =0; j<matrice1[i].length;j++){
-                System.out.print(matrice1[i][j]+" ");
-            }
-            System.out.println();
-        }
+        Person person1 =new Person();
+        person1.name = "Роман";
+        person1.age = 50;
+        person1.sayHello();
+        Person person2 =new Person();
+        person2.name = "Вова";
+        person2.age = 20;
+        person2.speak();
+        person2.sayHello();
         }
     }
+class Person{
+    String name;
+    int age;
+
+    void speak(){
+        for(int i=0; i<3; i++);{
+        System.out.println("Меня зовут"+ name +" ,мне "+age+"лет");}
+    }
+    void sayHello(){
+        System.out.println("Привет");
+    }
+}
