@@ -2,23 +2,38 @@
 public class Main {
     public static void main(String[] args) {
         Person person1 =new Person();
-        person1.setNameAndAge("Роман",20);
-        String s1 = "Вова";
-        Person person2 =new Person();
-        person2.setNameAndAge(s1,30);
-        person1.speak();
-        person2.speak();
+        person1.setName("Bob");
+        person1.setAge(12);
+        System.out.println("Выводим значение в main методе:" + person1.setName());
+        System.out.println("Выводим значение в main методе:" + person1.setAge());
         }
     }
 class Person{
-    String name;
-    int age;
+    private String name;
+    private int age;
 
-    void setNameAndAge(String username,int userage){
-        name = username;
-        age = userage;
+    /**
+     * @param userName
+     */
+    public void setName(String userName){
+        if (userName.isEmpty()){
+            System.out.println("Ты ввёл пустое имя");
+        } else{
+        name = userName;}
+    }
+    public String getName(){
+        return name;
+    }
+    public void setAge(int userAge){
+        if(userAge<0){
+            System.out.println("Возраст должен быть положительным");
+        }else {
+            age = userAge;}
     }
 
+    public int getAge(){
+        return age;
+    }
     int calculateYearsToRetirement(){
         int years = 65-age;
         return years;
